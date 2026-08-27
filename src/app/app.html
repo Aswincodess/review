@@ -1,1 +1,6 @@
-<app-login></app-login>
+<h1>NgRx Cart</h1>
+<button (click)="addProduct()">Add iPhone</button>
+
+<div *ngFor="let product of products$ | async">
+  {{ product.name }}
+</div>
